@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://10sur10.net
+
+# Sitemaps
+Sitemap: https://10sur10.net/sitemap.xml
