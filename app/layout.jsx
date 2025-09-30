@@ -4,7 +4,6 @@ import Headers from "@/libs/components/headers";
 import Footer from "@/libs/components/Footer";
 import Script from "next/script";
 import Head from "next/head";
-import { NextSeo } from "next-seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -106,30 +105,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-
-        
-      <NextSeo
-        title="10sur10 – Soutien scolaire et cours particuliers à domicile en Mauritanie"
-        description="10sur10.net propose des cours particuliers et du soutien scolaire à domicile pour le primaire, collège et lycée. Professeurs qualifiés pour toutes les matières."
-        canonical="https://10sur10.net/"
-        openGraph={{
-          url: "https://10sur10.net/",
-          title: "10sur10 – Soutien scolaire en Mauritanie",
-          description:
-            "Cours particuliers à domicile et aide aux devoirs pour élèves du primaire, collège et lycée.",
-          images: [
-            {
-              url: "https://10sur10.net/assets/logo/logo.png",
-              width: 1200,
-              height: 630,
-              alt: "10sur10 Soutien scolaire Mauritanie",
-            },
-          ],
-          site_name: "10sur10",
-        }}
-      />
-
-
         <Headers />
         <div id="google_translate_element" style={{ display: "none" }}></div>
           <div className="min-h-screen bg-white">
